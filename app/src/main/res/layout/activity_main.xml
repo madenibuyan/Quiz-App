@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz App"
+            android:textSize="25sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+             />
+
+        <!-- ALL ABOUT QUESTION ONE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which is private member functions access scope?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <!--Correct -->
+            <RadioButton
+                android:id="@+id/question-one-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Member functions which can only be used within the class"/>
+            <RadioButton
+                android:id="@+id/question-one-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Member functions which can used outside the class"/>
+            <RadioButton
+                android:id="@+id/question-one-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Member functions which are accessible in derived class"/>
+            <RadioButton
+                android:id="@+id/question-one-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Member functions which can’t be accessed inside the class"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION TWO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 2"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which among the following is true?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-two-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="The private members can’t be accessed by public members of the class"/>
+
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-two-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="The private members can be accessed by public members of the class"/>
+            <RadioButton
+                android:id="@+id/question-two-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="The private members can be accessed only by the private members of the class"/>
+            <RadioButton
+                android:id="@+id/question-two-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="The private members can’t be accessed by the protected members of the class"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION THREE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 3"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which member can never be accessed by inherited classes?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-three-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Private member function"/>
+            <RadioButton
+                android:id="@+id/question-three-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Public member function"/>
+            <RadioButton
+                android:id="@+id/question-three-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Protected member function"/>
+            <RadioButton
+                android:id="@+id/question-three-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="All can be accessed"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION FOUR -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 4"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which syntax among the following shows that a member is private in a class?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-four-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="private: functionName(parameters)"/>
+            <RadioButton
+                android:id="@+id/question-four-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="private(functionName(parameters))"/>
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-four-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="private functionName(parameters)"/>
+            <RadioButton
+                android:id="@+id/question-four-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="private::functionName(parameters)"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION FIVE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 5"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In java, which rule must be followed?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-five-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Keyword private preceding list of private member’s"/>
+            <RadioButton
+                android:id="@+id/question-five-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Keyword private with a colon before list of private member’s"/>
+            <RadioButton
+                android:id="@+id/question-five-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Keyword private with arrow before each private member"/>
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-five-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Keyword private preceding each private member"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION SIX -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 6"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How many private member functions are allowed in a class ?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-six-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Only 1"/>
+            <RadioButton
+                android:id="@+id/question-six-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Only 7"/>
+            <RadioButton
+                android:id="@+id/question-six-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Only 255"/>
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-six-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="As many as required"/>
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION SEVEN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 7"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A private function of a derived class can be accessed by the parent class"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-seven-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="True"/>
+
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-seven-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="False"/>
+
+        </RadioGroup>
+
+        <!-- ALL ABOUT QUESTION EIGHT -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 8"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is the full meaning of ART in Android?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <EditText
+            android:id="@+id/question-eight-answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+
+        <!-- ALL ABOUT QUESTION NINE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 9"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which of the following is an IDE?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <CheckBox
+            android:id="@+id/question-nine-option-one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eclipse"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/question-nine-option-two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Netbeans"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/question-nine-option-three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Udacity"
+            android:layout_margin="5dp"/>
+        <CheckBox
+            android:id="@+id/question-nine-option-four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IntelliJ"
+            android:layout_margin="5dp"/>
+
+        <!-- ALL ABOUT QUESTION TEN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 10"
+            android:textSize="25sp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Which of these selection statements test only for equality?"
+            android:textSize="16sp"
+            android:layout_margin="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/question-ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <RadioButton
+                android:id="@+id/question-ten-option-one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="if"/>
+            <!--Correct-->
+            <RadioButton
+                android:id="@+id/question-ten-option-two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="switch"/>
+            <RadioButton
+                android:id="@+id/question-ten-option-three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="if &amp; switch"/>
+            <RadioButton
+                android:id="@+id/question-ten-option-four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="none of the mentioned"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit-quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
